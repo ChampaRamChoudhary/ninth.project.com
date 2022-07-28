@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event and listener</title>
+
+    <style>
+        .key {
+            border: 2px solid black;
+            background-color: aqua;
+            color: blue;
+            border-radius: 4px;
+            display: block;
+            margin: auto;
+            font-size: medium;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="text-align:center; background-color: antiquewhite;" id="box" class="container">
+        <h2 style="color:blue">Welcome to the our portal</h2>
+        <p id="pg">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, quidem. Ipsam labore eveniet quia temporibus
+            delectus, omnis excepturi modi obcaecati magnam vel aperiam eaque commodi aut. Neque similique illo
+            ullam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem omnis ullam maxime aliquid!
+            Corrupti at blanditiis nam, itaque quae enim a excepturi. Porro sit temporibus deleniti voluptas corporis
+            accusamus, vero commodi nostrum earum.
+        </p>
+        <button id="btn" class="key" onclick="togglehide()">Show/Hide</button>
+    </div>
+
+    <script>
+        function togglehide() {
+            let a = document.getElementById('pg');
+            if (a.style.display != 'none') {
+                a.style.display = 'none';
+            }
+            else {
+                a.style.display = 'block';
+            }
+        };
+
+        let a = document.getElementById('pg');
+        pg.addEventListener('mouseover', function run() {
+            alert('Mouse is inside the paragraph');
+        });
+        a.addEventListener('mouseout', function run() {
+            alert('Mouse is outside the paragraph');
+        });
+
+    </script>
+</body>
+
+</html>
